@@ -1,10 +1,22 @@
 #include<iostream>
+#include<string>
 using namespace std;
 
 char before(char x){
-	//Write your function definition here
+    char result ;
+    int E ;
+    if( x > 'A' && x <= 'Z'){
+        result = x - 1 ;
+        return result ;
+    }else if( x == 'A'){
+        result = 'Z';
+        return result ;
+    }else{
+        E = '0' ;
+        return E ;
+    }
+    
 }
-
 int main(){
 	//Test Case
 	cout << before('A') << "\n";
